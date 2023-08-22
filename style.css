@@ -1,0 +1,60 @@
+body{
+    background: #333;
+    margin:0;
+    color: white;
+}
+nav{
+    border-bottom: papayawhip 1px solid;
+    background-color: #333;
+    display: flex;
+    height: 65px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: papayawhip;   
+}
+nav figure{
+    height: 50px;
+    margin: auto 10px;
+}
+nav figure img {
+    margin: auto;
+    height: 100%;
+}
+.characters {
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+}
+.card{
+    color: black;
+    background-color: white;
+    display: flexbox;
+    border-radius: 15px;
+    width: 25vh;
+    padding: 2vh;
+    margin: 10px;
+}
+.card figure{
+    padding: 0px;
+    margin: 0px;
+}
+.card figure img{
+    width: 100%;
+    border-radius: 15px;
+}
+.card h1{
+    text-align: center;
+}
