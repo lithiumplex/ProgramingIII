@@ -8,6 +8,8 @@ nav{
     background-color: #333;
     display: flex;
     height: 65px;
+    width: 100%;
+    position: fixed;
 }
 nav ul{
     display: flex;
@@ -35,17 +37,26 @@ nav figure img {
     height: 100%;
 }
 .characters {
+    width: 100%;    
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    top: 65px;
+    margin-top: 4vh;
+    z-index: -1;
+
     display: grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(auto-fill, 14vw);
+    gap: 8px;
 }
 .card{
-    color: black;
-    background-color: white;
+    border: 1px solid;
+    border-color: papayawhip;
     display: flexbox;
-    border-radius: 15px;
-    width: 25vh;
-    padding: 2vh;
-    margin: 10px;
+    border-radius: 16px;
+    width: 10vw;
+    padding: 2vw;
+
 }
 .card figure{
     padding: 0px;
