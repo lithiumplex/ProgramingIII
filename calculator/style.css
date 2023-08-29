@@ -1,0 +1,27 @@
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+}
+.calculator form{
+    background-color: beige;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form div{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+form div button{
+    background-color: lightpink;
+    border: none;
+    border-radius: 10px;
+}
+.calculator input:last-child{
+    pointer-events: none;
+    user-select: none;
+}
