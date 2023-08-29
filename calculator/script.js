@@ -28,6 +28,15 @@ buttons.forEach(button => {
       case '√¯':
         result = Math.pow(firstValue, 1 / secondValue);
         break;
+      case 'Techo':
+        result = Math.ceil(resultInput.value);
+        break;
+      case 'Piso':
+        result = Math.floor(resultInput.value);
+        break;
+      case 'Redondeo':
+        result = Math.round(resultInput.value);
+        break;
     }
     resultInput.value = result;
   });

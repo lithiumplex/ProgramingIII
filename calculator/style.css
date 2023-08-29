@@ -21,7 +21,7 @@ form div button{
     border: none;
     border-radius: 10px;
 }
-.calculator input:last-child{
+.calculator input:nth-child(4){
     pointer-events: none;
     user-select: none;
 }
