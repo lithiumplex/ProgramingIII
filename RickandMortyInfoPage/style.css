@@ -36,27 +36,26 @@ nav figure img {
     margin: auto;
     height: 100%;
 }
-.characters {
-    width: 100%;    
+.characters {   
+    height: auto;
+    width: 100%;
     position: absolute;
     justify-content: center;
-    align-self: center;
     top: 65px;
     margin-top: 4vh;
     z-index: -1;
-
-    display: grid;
-    grid-template-columns:repeat(auto-fill, 14vw);
-    gap: 8px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 8px;      
 }
 .card{
     border: 1px solid;
     border-color: papayawhip;
-    display: flexbox;
     border-radius: 16px;
     width: 10vw;
     padding: 2vw;
-
+    height: min-content;
 }
 .card figure{
     padding: 0px;
