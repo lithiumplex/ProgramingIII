@@ -36,7 +36,11 @@ async function displayMovies(searchText) {
     movieContainer.appendChild(movieCard);
   }
 }
-
+displayMovies("marvel")
+displayMovies("love")
+displayMovies("thunder")
+displayMovies("random")
+displayMovies("nacho")
 function buscar(){
     displayMovies(searchl.value)
 }

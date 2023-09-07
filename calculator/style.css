@@ -1,4 +1,6 @@
+
 .calculator{
+    height: 75vh;
     display: grid;
     justify-content: center;
     align-items:center;
