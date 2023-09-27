@@ -1,0 +1,41 @@
+body{
+    background: papayawhip;
+}
+
+section.addPerson{
+    display: flex;
+    flex-direction: row;
+}
+.personForm{
+    width: 50%;
+    display: grid;
+    place-items: center; 
+}
+.personForm form{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.personForm form input{
+    border:none;
+    border-radius: 4px;
+}
+.personForm form button{
+    border: none;
+    background: lightblue;
+    border-radius: 4px;
+}
+.personForm label{
+    text-align: center;
+    font-style:italic;
+    color: gray;
+}
+.addPerson div table th{
+    padding: 6px;
+}
+table{
+    border-collapse: collapse;
+    border-radius: 16px;
+    color: gray;
+}
