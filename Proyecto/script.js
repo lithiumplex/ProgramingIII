@@ -1,22 +1,40 @@
-const Person = [
-    document.getElementById("name"),
-    document.getElementById("lastName"),
-    document.getElementById("email"),
-    document.getElementById("numberPhone")
-];
-const Button = document.getElementById("personButton");
-const Table = document.getElementById("personTable")
+let listaPersonas = [];
 
-Button.addEventListener("click",addPerson)
+const Button = document.getElementById("personButton");
+const Table = document.getElementById("personTable");
+
+Button.addEventListener("click",addPerson);
+
+function Person(name,lastName,email,numberPhone,image){
+    this.name=name;
+    this.lastName=lastName;
+    this.email=email;
+    this.numberPhone=numberPhone;
+    this.image=image;
+}
 function addPerson(){
+    let tPerson = new Person(
+        document.getElementById("name").value,
+        document.getElementById("lastName").value,
+        document.getElementById("email").value,
+        document.getElementById("numberPhone").value,
+        document.getElementById("image").value
+    );
+    listaPersonas.push(tPerson);
+    printPerson(tPerson);    
+}
+function printPerson(person){
+    personValues = Object.values(person);  
     let row = document.createElement("tr");
-    console.log(Person);
-    for (let i = 0; i < Person.length; i++) {
-        const element = Person[i];
+    for (let i = 0; i < personValues.length-1; i++) {
         let text = document.createElement("th");
-        console.log(text);
-        text.textContent = element.value;
+        text.textContent = personValues[i];
         row.appendChild(text);
     }
+    let text = document.createElement("th");
+        let img = document.createElement("img");
+        img.src = personValues.at(-1);
+    text.appendChild(img);
+    row.appendChild(text);
     Table.appendChild(row);
 }
