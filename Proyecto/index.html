@@ -10,6 +10,12 @@
     <section class="addPerson">
         <div class="personForm">
             <form action="">
+                <div>
+                    <p id="create">create</p>
+                    <p id="update">update</p>
+                </div>
+                <label id="codeL" class="hidden" for="code">Code</label>
+                <input id="codeI" class="hidden , code" type="text" id="code" readonly>
                 <label for="name">Name</label>
                 <input type="text" id="name">
                 <label for="lastName">Last Name</label>
@@ -21,15 +27,17 @@
                 <label for="image">Link Image</label>
                 <input type="text" id="image">
                 <button type="button" id="personButton">Añadir</button>
+                <button class="hidden" type="button" id="editPersonButton">Editar</button>
             </form>
         </div>
         <div>
             <table id="personTable" border = "solid">
                 <tr>
+                    <th>Code</th>
                     <th>Name</th>
                     <th>LastName</th>
                     <th>Email</th>
-                    <th>numberPhone</th>
+                    <th>Phone</th>
                     <th>image</th>
                 </tr>
             </table>
